@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC1F9522153060C30092F7B0 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1F9520153060C30092F7B0 /* CardViewController.m */; };
+		AC1F9523153060C30092F7B0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1F9521153060C30092F7B0 /* CardViewController.xib */; };
+		AC1F9526153061B00092F7B0 /* cartaGrande.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1F9525153061B00092F7B0 /* cartaGrande.png */; };
+		AC45603C152EE2A20094B904 /* Utilita.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45603B152EE2A20094B904 /* Utilita.m */; };
+		AC456040152EE2BF0094B904 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45603F152EE2BF0094B904 /* Reachability.m */; };
+		AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = AC456042152EE3030094B904 /* DatabaseAccess.m */; };
+		AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456044152EED140094B904 /* SystemConfiguration.framework */; };
+		ACDB03051542AE7C00510C30 /* ReceivedCardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB03031542AE7C00510C30 /* ReceivedCardsController.m */; };
+		ACDB03061542AE7C00510C30 /* ReceivedCardsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03041542AE7C00510C30 /* ReceivedCardsController.xib */; };
+		ACDB03091542B03200510C30 /* UserCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03081542B03200510C30 /* UserCardCell.xib */; };
+		ACDB030B1542B67600510C30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDB030A1542B67600510C30 /* CoreData.framework */; };
+		ACDB030E1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDB030C1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld */; };
+		ACDB03111542B7C000510C30 /* LocalDatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB03101542B7C000510C30 /* LocalDatabaseAccess.m */; };
+		ACDB03141542B7E000510C30 /* CartaPerDue.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB03131542B7E000510C30 /* CartaPerDue.m */; };
+		ACDB031A1542D32700510C30 /* checkV.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03161542D32700510C30 /* checkV.png */; };
+		ACDB031B1542D32700510C30 /* checkV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03171542D32700510C30 /* checkV@2x.png */; };
+		ACDB031C1542D32700510C30 /* checkX.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03181542D32700510C30 /* checkX.png */; };
+		ACDB031D1542D32700510C30 /* checkX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03191542D32700510C30 /* checkX@2x.png */; };
+		ACEC20E5152EDB9100E63B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E4152EDB9100E63B8B /* UIKit.framework */; };
+		ACEC20E7152EDB9100E63B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E6152EDB9100E63B8B /* Foundation.framework */; };
+		ACEC20E9152EDB9100E63B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E8152EDB9100E63B8B /* CoreGraphics.framework */; };
+		ACEC20EF152EDB9100E63B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20ED152EDB9100E63B8B /* InfoPlist.strings */; };
+		ACEC20F1152EDB9100E63B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F0152EDB9100E63B8B /* main.m */; };
+		ACEC20F5152EDB9100E63B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F4152EDB9100E63B8B /* AppDelegate.m */; };
+		ACEC20F8152EDB9100E63B8B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F7152EDB9100E63B8B /* FirstViewController.m */; };
+		ACEC20FA152EDB9100E63B8B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20F9152EDB9100E63B8B /* first.png */; };
+		ACEC20FC152EDB9100E63B8B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20FB152EDB9100E63B8B /* first@2x.png */; };
+		ACEC20FF152EDB9100E63B8B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20FE152EDB9100E63B8B /* SecondViewController.m */; };
+		ACEC2101152EDB9100E63B8B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2100152EDB9100E63B8B /* second.png */; };
+		ACEC2103152EDB9100E63B8B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2102152EDB9100E63B8B /* second@2x.png */; };
+		ACEC2106152EDB9100E63B8B /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2104152EDB9100E63B8B /* FirstViewController.xib */; };
+		ACEC2109152EDB9100E63B8B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2107152EDB9100E63B8B /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC1F951F153060C30092F7B0 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		AC1F9520153060C30092F7B0 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		AC1F9521153060C30092F7B0 /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		AC1F9525153061B00092F7B0 /* cartaGrande.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cartaGrande.png; sourceTree = "<group>"; };
+		AC45603A152EE2A20094B904 /* Utilita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilita.h; sourceTree = "<group>"; };
+		AC45603B152EE2A20094B904 /* Utilita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilita.m; sourceTree = "<group>"; };
+		AC45603E152EE2BF0094B904 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AC45603F152EE2BF0094B904 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AC456041152EE3030094B904 /* DatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseAccess.h; sourceTree = "<group>"; };
+		AC456042152EE3030094B904 /* DatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseAccess.m; sourceTree = "<group>"; };
+		AC456044152EED140094B904 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACDB03021542AE7C00510C30 /* ReceivedCardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceivedCardsController.h; sourceTree = "<group>"; };
+		ACDB03031542AE7C00510C30 /* ReceivedCardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceivedCardsController.m; sourceTree = "<group>"; };
+		ACDB03041542AE7C00510C30 /* ReceivedCardsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceivedCardsController.xib; sourceTree = "<group>"; };
+		ACDB03081542B03200510C30 /* UserCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCardCell.xib; sourceTree = "<group>"; };
+		ACDB030A1542B67600510C30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ACDB030D1542B6BF00510C30 /* cardsReceivedModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cardsReceivedModel.xcdatamodel; sourceTree = "<group>"; };
+		ACDB030F1542B7C000510C30 /* LocalDatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDatabaseAccess.h; sourceTree = "<group>"; };
+		ACDB03101542B7C000510C30 /* LocalDatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDatabaseAccess.m; sourceTree = "<group>"; };
+		ACDB03121542B7E000510C30 /* CartaPerDue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartaPerDue.h; sourceTree = "<group>"; };
+		ACDB03131542B7E000510C30 /* CartaPerDue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartaPerDue.m; sourceTree = "<group>"; };
+		ACDB03161542D32700510C30 /* checkV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkV.png; sourceTree = "<group>"; };
+		ACDB03171542D32700510C30 /* checkV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkV@2x.png"; sourceTree = "<group>"; };
+		ACDB03181542D32700510C30 /* checkX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkX.png; sourceTree = "<group>"; };
+		ACDB03191542D32700510C30 /* checkX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkX@2x.png"; sourceTree = "<group>"; };
+		ACEC20E0152EDB9100E63B8B /* PerDueEse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerDueEse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEC20E4152EDB9100E63B8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ACEC20E6152EDB9100E63B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ACEC20E8152EDB9100E63B8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACEC20EC152EDB9100E63B8B /* PerDueEse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PerDueEse-Info.plist"; sourceTree = "<group>"; };
+		ACEC20EE152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACEC20F0152EDB9100E63B8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACEC20F2152EDB9100E63B8B /* PerDueEse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PerDueEse-Prefix.pch"; sourceTree = "<group>"; };
+		ACEC20F3152EDB9100E63B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACEC20F4152EDB9100E63B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACEC20F6152EDB9100E63B8B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		ACEC20F7152EDB9100E63B8B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		ACEC20F9152EDB9100E63B8B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		ACEC20FB152EDB9100E63B8B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		ACEC20FD152EDB9100E63B8B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		ACEC20FE152EDB9100E63B8B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ACEC2100152EDB9100E63B8B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		ACEC2102152EDB9100E63B8B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		ACEC2105152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		ACEC2108152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACEC20DD152EDB9100E63B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDB030B1542B67600510C30 /* CoreData.framework in Frameworks */,
+				AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */,
+				ACEC20E5152EDB9100E63B8B /* UIKit.framework in Frameworks */,
+				ACEC20E7152EDB9100E63B8B /* Foundation.framework in Frameworks */,
+				ACEC20E9152EDB9100E63B8B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC455D07152EE2610094B904 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB030F1542B7C000510C30 /* LocalDatabaseAccess.h */,
+				ACDB03101542B7C000510C30 /* LocalDatabaseAccess.m */,
+				AC456041152EE3030094B904 /* DatabaseAccess.h */,
+				AC456042152EE3030094B904 /* DatabaseAccess.m */,
+				AC45603D152EE2BF0094B904 /* Reachbility */,
+				AC45603A152EE2A20094B904 /* Utilita.h */,
+				AC45603B152EE2A20094B904 /* Utilita.m */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		AC45603D152EE2BF0094B904 /* Reachbility */ = {
+			isa = PBXGroup;
+			children = (
+				AC45603E152EE2BF0094B904 /* Reachability.h */,
+				AC45603F152EE2BF0094B904 /* Reachability.m */,
+			);
+			path = Reachbility;
+			sourceTree = "<group>";
+		};
+		ACDB03151542D31500510C30 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB03161542D32700510C30 /* checkV.png */,
+				ACDB03171542D32700510C30 /* checkV@2x.png */,
+				ACDB03181542D32700510C30 /* checkX.png */,
+				ACDB03191542D32700510C30 /* checkX@2x.png */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		ACEC20D5152EDB9000E63B8B = {
+			isa = PBXGroup;
+			children = (
+				ACEC20EA152EDB9100E63B8B /* PerDueEse */,
+				ACEC20E3152EDB9100E63B8B /* Frameworks */,
+				ACEC20E1152EDB9100E63B8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACEC20E1152EDB9100E63B8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACEC20E0152EDB9100E63B8B /* PerDueEse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACEC20E3152EDB9100E63B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB030A1542B67600510C30 /* CoreData.framework */,
+				AC456044152EED140094B904 /* SystemConfiguration.framework */,
+				ACEC20E4152EDB9100E63B8B /* UIKit.framework */,
+				ACEC20E6152EDB9100E63B8B /* Foundation.framework */,
+				ACEC20E8152EDB9100E63B8B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACEC20EA152EDB9100E63B8B /* PerDueEse */ = {
+			isa = PBXGroup;
+			children = (
+				ACEC20F3152EDB9100E63B8B /* AppDelegate.h */,
+				ACEC20F4152EDB9100E63B8B /* AppDelegate.m */,
+				ACEC20F6152EDB9100E63B8B /* FirstViewController.h */,
+				ACEC20F7152EDB9100E63B8B /* FirstViewController.m */,
+				ACEC20F9152EDB9100E63B8B /* first.png */,
+				ACEC20FB152EDB9100E63B8B /* first@2x.png */,
+				ACEC20FD152EDB9100E63B8B /* SecondViewController.h */,
+				ACEC20FE152EDB9100E63B8B /* SecondViewController.m */,
+				AC1F951F153060C30092F7B0 /* CardViewController.h */,
+				AC1F9520153060C30092F7B0 /* CardViewController.m */,
+				AC1F9521153060C30092F7B0 /* CardViewController.xib */,
+				ACDB03021542AE7C00510C30 /* ReceivedCardsController.h */,
+				ACDB03031542AE7C00510C30 /* ReceivedCardsController.m */,
+				ACDB03041542AE7C00510C30 /* ReceivedCardsController.xib */,
+				ACDB03081542B03200510C30 /* UserCardCell.xib */,
+				ACEC2100152EDB9100E63B8B /* second.png */,
+				ACEC2102152EDB9100E63B8B /* second@2x.png */,
+				ACEC2104152EDB9100E63B8B /* FirstViewController.xib */,
+				ACEC2107152EDB9100E63B8B /* SecondViewController.xib */,
+				AC1F9525153061B00092F7B0 /* cartaGrande.png */,
+				ACDB03121542B7E000510C30 /* CartaPerDue.h */,
+				ACDB03131542B7E000510C30 /* CartaPerDue.m */,
+				AC455D07152EE2610094B904 /* utilities */,
+				ACEC20EB152EDB9100E63B8B /* Supporting Files */,
+			);
+			path = PerDueEse;
+			sourceTree = "<group>";
+		};
+		ACEC20EB152EDB9100E63B8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACDB03151542D31500510C30 /* imgs */,
+				ACEC20EC152EDB9100E63B8B /* PerDueEse-Info.plist */,
+				ACEC20ED152EDB9100E63B8B /* InfoPlist.strings */,
+				ACEC20F0152EDB9100E63B8B /* main.m */,
+				ACEC20F2152EDB9100E63B8B /* PerDueEse-Prefix.pch */,
+				ACDB030C1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACEC20DF152EDB9100E63B8B /* PerDueEse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACEC210C152EDB9100E63B8B /* Build configuration list for PBXNativeTarget "PerDueEse" */;
+			buildPhases = (
+				ACEC20DC152EDB9100E63B8B /* Sources */,
+				ACEC20DD152EDB9100E63B8B /* Frameworks */,
+				ACEC20DE152EDB9100E63B8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerDueEse;
+			productName = PerDueEse;
+			productReference = ACEC20E0152EDB9100E63B8B /* PerDueEse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACEC20D7152EDB9000E63B8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = ACEC20DA152EDB9000E63B8B /* Build configuration list for PBXProject "PerDueEse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACEC20D5152EDB9000E63B8B;
+			productRefGroup = ACEC20E1152EDB9100E63B8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACEC20DF152EDB9100E63B8B /* PerDueEse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACEC20DE152EDB9100E63B8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEC20EF152EDB9100E63B8B /* InfoPlist.strings in Resources */,
+				ACEC20FA152EDB9100E63B8B /* first.png in Resources */,
+				ACEC20FC152EDB9100E63B8B /* first@2x.png in Resources */,
+				ACEC2101152EDB9100E63B8B /* second.png in Resources */,
+				ACEC2103152EDB9100E63B8B /* second@2x.png in Resources */,
+				ACEC2106152EDB9100E63B8B /* FirstViewController.xib in Resources */,
+				ACEC2109152EDB9100E63B8B /* SecondViewController.xib in Resources */,
+				AC1F9523153060C30092F7B0 /* CardViewController.xib in Resources */,
+				AC1F9526153061B00092F7B0 /* cartaGrande.png in Resources */,
+				ACDB03061542AE7C00510C30 /* ReceivedCardsController.xib in Resources */,
+				ACDB03091542B03200510C30 /* UserCardCell.xib in Resources */,
+				ACDB031A1542D32700510C30 /* checkV.png in Resources */,
+				ACDB031B1542D32700510C30 /* checkV@2x.png in Resources */,
+				ACDB031C1542D32700510C30 /* checkX.png in Resources */,
+				ACDB031D1542D32700510C30 /* checkX@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACEC20DC152EDB9100E63B8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEC20F1152EDB9100E63B8B /* main.m in Sources */,
+				ACEC20F5152EDB9100E63B8B /* AppDelegate.m in Sources */,
+				ACEC20F8152EDB9100E63B8B /* FirstViewController.m in Sources */,
+				ACEC20FF152EDB9100E63B8B /* SecondViewController.m in Sources */,
+				AC45603C152EE2A20094B904 /* Utilita.m in Sources */,
+				AC456040152EE2BF0094B904 /* Reachability.m in Sources */,
+				AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */,
+				AC1F9522153060C30092F7B0 /* CardViewController.m in Sources */,
+				ACDB03051542AE7C00510C30 /* ReceivedCardsController.m in Sources */,
+				ACDB030E1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld in Sources */,
+				ACDB03111542B7C000510C30 /* LocalDatabaseAccess.m in Sources */,
+				ACDB03141542B7E000510C30 /* CartaPerDue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACEC20ED152EDB9100E63B8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEC20EE152EDB9100E63B8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ACEC2104152EDB9100E63B8B /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEC2105152EDB9100E63B8B /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		ACEC2107152EDB9100E63B8B /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACEC2108152EDB9100E63B8B /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACEC210A152EDB9100E63B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ACEC210B152EDB9100E63B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACEC210D152EDB9100E63B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mario Parroco (Q56JFCMDC5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mario Parroco (Q56JFCMDC5)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PerDueEse/PerDueEse-Prefix.pch";
+				INFOPLIST_FILE = "PerDueEse/PerDueEse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ED18CA50-E684-495C-9CE2-F9068F7EC52F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED18CA50-E684-495C-9CE2-F9068F7EC52F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ACEC210E152EDB9100E63B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mario Parroco (Q56JFCMDC5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mario Parroco (Q56JFCMDC5)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PerDueEse/PerDueEse-Prefix.pch";
+				INFOPLIST_FILE = "PerDueEse/PerDueEse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ED18CA50-E684-495C-9CE2-F9068F7EC52F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED18CA50-E684-495C-9CE2-F9068F7EC52F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACEC20DA152EDB9000E63B8B /* Build configuration list for PBXProject "PerDueEse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEC210A152EDB9100E63B8B /* Debug */,
+				ACEC210B152EDB9100E63B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACEC210C152EDB9100E63B8B /* Build configuration list for PBXNativeTarget "PerDueEse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEC210D152EDB9100E63B8B /* Debug */,
+				ACEC210E152EDB9100E63B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACDB030C1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACDB030D1542B6BF00510C30 /* cardsReceivedModel.xcdatamodel */,
+			);
+			currentVersion = ACDB030D1542B6BF00510C30 /* cardsReceivedModel.xcdatamodel */;
+			path = cardsReceivedModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACEC20D7152EDB9000E63B8B /* Project object */;
+}
