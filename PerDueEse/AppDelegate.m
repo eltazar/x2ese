@@ -164,34 +164,43 @@
     [userInfo retain];
     
     CartaPerDue *card = [[CartaPerDue alloc] init];
-    card.name = [[userInfo objectForKey:@"userData"] objectAtIndex:0];
-    card.surname = [[userInfo objectForKey:@"userData"] objectAtIndex:1];
-    card.number = [[userInfo objectForKey:@"userData"] objectAtIndex:2];
-    card.expiryString = [[userInfo objectForKey:@"userData"] objectAtIndex:3];
     
-    if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"valid"]){
-        card.state = @"Valida";
-    }
-    else if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"expired"]){
-        card.state = @"Scaduta";
-    }
-    else if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"not_existing"]){
+    if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"not_exsisting"]){
+        
+        card.name = @"";
+        card.surname = @"";
+        card.number = @"";
+        card.expiryString = @" ";
         card.state = @"Non esistente";
-    }
-    
-    //Effettuiamo il salvataggio gestendo eventuali errori
-    NSError *error;
-    if (![[LocalDatabaseAccess getInstance]storeCard:card AndWriteErrorIn:&error]) {
-        NSLog(@"Errore durante il salvataggio: %@", [error localizedDescription]);
+        
     }
     else{
-        NSLog(@"carta salvata su db locale");
+        card.name = [[userInfo objectForKey:@"userData"] objectAtIndex:0];
+        card.surname = [[userInfo objectForKey:@"userData"] objectAtIndex:1];
+        card.number = [[userInfo objectForKey:@"userData"] objectAtIndex:2];
+        card.expiryString = [[userInfo objectForKey:@"userData"] objectAtIndex:3];
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:kReceivedPushNotification object:nil userInfo:nil];
-    }/* else if (self.delegate && [self.delegate respondsToSelector:@selector(didAssociateNewCard)]) {
-      [self.delegate didAssociateNewCard];
-      }    
-      */
+        if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"valid"]){
+            card.state = @"Valida";
+        }
+        else if([[[userInfo objectForKey:@"userData"] objectAtIndex:4] isEqualToString:@"expired"]){
+            card.state = @"Scaduta";
+        }
+        
+        //Effettuiamo il salvataggio gestendo eventuali errori
+        NSError *error;
+        if (![[LocalDatabaseAccess getInstance]storeCard:card AndWriteErrorIn:&error]) {
+            NSLog(@"Errore durante il salvataggio: %@", [error localizedDescription]);
+        }
+        else{
+            NSLog(@"carta salvata su db locale");
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kReceivedPushNotification object:nil userInfo:nil];
+        }/* else if (self.delegate && [self.delegate respondsToSelector:@selector(didAssociateNewCard)]) {
+          [self.delegate didAssociateNewCard];
+          }    
+        */
+    }
     
     //lancio una view modale con il riassunto della notifica
     
