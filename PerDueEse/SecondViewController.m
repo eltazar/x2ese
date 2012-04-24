@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+
+#import <QuartzCore/QuartzCore.h>
 #import "SecondViewController.h"
 #import "AppDelegate.h"
 #import "Utilita.h"
@@ -25,7 +27,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"Attivazione";
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"active.png"];
     }
     return self;
 }
@@ -121,6 +123,29 @@
     
     dbAccess = [[DatabaseAccess alloc] init];
     dbAccess.delegate = self;
+
+    // create the button object
+    UIButton* b = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    
+    //[b setBackgroundColor:[UIColor grayColor]];
+    
+    b.frame = CGRectMake(78.0, 300.0, 164.0, 37.0);
+    b.titleLabel.font = [UIFont boldSystemFontOfSize:18.0];
+    [b setTitle:@"Invia" forState:UIControlStateNormal];
+    [b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [b setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    [b setBackgroundImage:[UIImage imageNamed:@"grayButton2.png"] forState:UIControlStateNormal];
+    
+    // give it a tag in case you need it later
+    //b.tag = 1;
+    
+    // this sets up the callback for when the user hits the button
+    [b addTarget:self action:@selector(sendPinBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    b.layer.cornerRadius = 6.0;
+    b.layer.masksToBounds = YES;
+
+    [self.view addSubview:b];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

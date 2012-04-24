@@ -12,6 +12,7 @@
 @interface SecondViewController : UIViewController<DatabaseAccessDelegate>
 {
     DatabaseAccess *dbAccess;
+    
 }
 
 -(IBAction)sendPinBtnClicked:(id)sender;
