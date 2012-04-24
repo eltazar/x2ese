@@ -14,6 +14,12 @@
 		AC456040152EE2BF0094B904 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45603F152EE2BF0094B904 /* Reachability.m */; };
 		AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = AC456042152EE3030094B904 /* DatabaseAccess.m */; };
 		AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456044152EED140094B904 /* SystemConfiguration.framework */; };
+		ACCDB1291546D5BD00578758 /* pd.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB1271546D5BD00578758 /* pd.png */; };
+		ACCDB12A1546D5BD00578758 /* pd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB1281546D5BD00578758 /* pd@2x.png */; };
+		ACCDB12C1546D78300578758 /* active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB12B1546D78300578758 /* active@2x.png */; };
+		ACCDB12E1546D7AE00578758 /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB12D1546D7AE00578758 /* active.png */; };
+		ACCDB1311546D9BC00578758 /* push.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB12F1546D9BC00578758 /* push.png */; };
+		ACCDB1321546D9BC00578758 /* push@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB1301546D9BC00578758 /* push@2x.png */; };
 		ACDB03051542AE7C00510C30 /* ReceivedCardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDB03031542AE7C00510C30 /* ReceivedCardsController.m */; };
 		ACDB03061542AE7C00510C30 /* ReceivedCardsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03041542AE7C00510C30 /* ReceivedCardsController.xib */; };
 		ACDB03091542B03200510C30 /* UserCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03081542B03200510C30 /* UserCardCell.xib */; };
@@ -25,6 +31,13 @@
 		ACDB031B1542D32700510C30 /* checkV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03171542D32700510C30 /* checkV@2x.png */; };
 		ACDB031C1542D32700510C30 /* checkX.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03181542D32700510C30 /* checkX.png */; };
 		ACDB031D1542D32700510C30 /* checkX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDB03191542D32700510C30 /* checkX@2x.png */; };
+		ACE36AC11546ACC3003959E7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE36AC01546ACC3003959E7 /* background.png */; };
+		ACE36ACC1546AFFA003959E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE36ACB1546AFFA003959E7 /* QuartzCore.framework */; };
+		ACE36ACE1546B14A003959E7 /* grayButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = ACE36ACD1546B14A003959E7 /* grayButton2.png */; };
+		ACE36AD31546B539003959E7 /* Contatti.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE36AD01546B539003959E7 /* Contatti.m */; };
+		ACE36AD41546B539003959E7 /* Contatti.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE36AD11546B539003959E7 /* Contatti.xib */; };
+		ACE36AD51546B539003959E7 /* ContattiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE36AD21546B539003959E7 /* ContattiCell.xib */; };
+		ACE36AD71546BA9B003959E7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE36AD61546BA9B003959E7 /* MessageUI.framework */; };
 		ACEC20E5152EDB9100E63B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E4152EDB9100E63B8B /* UIKit.framework */; };
 		ACEC20E7152EDB9100E63B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E6152EDB9100E63B8B /* Foundation.framework */; };
 		ACEC20E9152EDB9100E63B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEC20E8152EDB9100E63B8B /* CoreGraphics.framework */; };
@@ -53,6 +66,12 @@
 		AC456041152EE3030094B904 /* DatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseAccess.h; sourceTree = "<group>"; };
 		AC456042152EE3030094B904 /* DatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseAccess.m; sourceTree = "<group>"; };
 		AC456044152EED140094B904 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACCDB1271546D5BD00578758 /* pd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd.png; path = imgs/pd.png; sourceTree = SOURCE_ROOT; };
+		ACCDB1281546D5BD00578758 /* pd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd@2x.png"; path = "imgs/pd@2x.png"; sourceTree = SOURCE_ROOT; };
+		ACCDB12B1546D78300578758 /* active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "active@2x.png"; path = "imgs/active@2x.png"; sourceTree = SOURCE_ROOT; };
+		ACCDB12D1546D7AE00578758 /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = active.png; path = imgs/active.png; sourceTree = SOURCE_ROOT; };
+		ACCDB12F1546D9BC00578758 /* push.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = push.png; path = imgs/push.png; sourceTree = SOURCE_ROOT; };
+		ACCDB1301546D9BC00578758 /* push@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "push@2x.png"; path = "imgs/push@2x.png"; sourceTree = SOURCE_ROOT; };
 		ACDB03021542AE7C00510C30 /* ReceivedCardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceivedCardsController.h; sourceTree = "<group>"; };
 		ACDB03031542AE7C00510C30 /* ReceivedCardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceivedCardsController.m; sourceTree = "<group>"; };
 		ACDB03041542AE7C00510C30 /* ReceivedCardsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceivedCardsController.xib; sourceTree = "<group>"; };
@@ -67,6 +86,14 @@
 		ACDB03171542D32700510C30 /* checkV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkV@2x.png"; sourceTree = "<group>"; };
 		ACDB03181542D32700510C30 /* checkX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkX.png; sourceTree = "<group>"; };
 		ACDB03191542D32700510C30 /* checkX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkX@2x.png"; sourceTree = "<group>"; };
+		ACE36AC01546ACC3003959E7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = imgs/background.png; sourceTree = SOURCE_ROOT; };
+		ACE36ACB1546AFFA003959E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACE36ACD1546B14A003959E7 /* grayButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayButton2.png; sourceTree = "<group>"; };
+		ACE36ACF1546B538003959E7 /* Contatti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contatti.h; sourceTree = "<group>"; };
+		ACE36AD01546B539003959E7 /* Contatti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contatti.m; sourceTree = "<group>"; };
+		ACE36AD11546B539003959E7 /* Contatti.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Contatti.xib; sourceTree = "<group>"; };
+		ACE36AD21546B539003959E7 /* ContattiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContattiCell.xib; sourceTree = "<group>"; };
+		ACE36AD61546BA9B003959E7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACEC20E0152EDB9100E63B8B /* PerDueEse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerDueEse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEC20E4152EDB9100E63B8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACEC20E6152EDB9100E63B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE36AD71546BA9B003959E7 /* MessageUI.framework in Frameworks */,
+				ACE36ACC1546AFFA003959E7 /* QuartzCore.framework in Frameworks */,
 				ACDB030B1542B67600510C30 /* CoreData.framework in Frameworks */,
 				AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */,
 				ACEC20E5152EDB9100E63B8B /* UIKit.framework in Frameworks */,
@@ -131,6 +160,14 @@
 		ACDB03151542D31500510C30 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				ACCDB12F1546D9BC00578758 /* push.png */,
+				ACCDB1301546D9BC00578758 /* push@2x.png */,
+				ACCDB12D1546D7AE00578758 /* active.png */,
+				ACCDB12B1546D78300578758 /* active@2x.png */,
+				ACCDB1271546D5BD00578758 /* pd.png */,
+				ACCDB1281546D5BD00578758 /* pd@2x.png */,
+				ACE36ACD1546B14A003959E7 /* grayButton2.png */,
+				ACE36AC01546ACC3003959E7 /* background.png */,
 				ACDB03161542D32700510C30 /* checkV.png */,
 				ACDB03171542D32700510C30 /* checkV@2x.png */,
 				ACDB03181542D32700510C30 /* checkX.png */,
@@ -159,6 +196,8 @@
 		ACEC20E3152EDB9100E63B8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACE36AD61546BA9B003959E7 /* MessageUI.framework */,
+				ACE36ACB1546AFFA003959E7 /* QuartzCore.framework */,
 				ACDB030A1542B67600510C30 /* CoreData.framework */,
 				AC456044152EED140094B904 /* SystemConfiguration.framework */,
 				ACEC20E4152EDB9100E63B8B /* UIKit.framework */,
@@ -175,10 +214,12 @@
 				ACEC20F4152EDB9100E63B8B /* AppDelegate.m */,
 				ACEC20F6152EDB9100E63B8B /* FirstViewController.h */,
 				ACEC20F7152EDB9100E63B8B /* FirstViewController.m */,
+				ACEC2104152EDB9100E63B8B /* FirstViewController.xib */,
 				ACEC20F9152EDB9100E63B8B /* first.png */,
 				ACEC20FB152EDB9100E63B8B /* first@2x.png */,
 				ACEC20FD152EDB9100E63B8B /* SecondViewController.h */,
 				ACEC20FE152EDB9100E63B8B /* SecondViewController.m */,
+				ACEC2107152EDB9100E63B8B /* SecondViewController.xib */,
 				AC1F951F153060C30092F7B0 /* CardViewController.h */,
 				AC1F9520153060C30092F7B0 /* CardViewController.m */,
 				AC1F9521153060C30092F7B0 /* CardViewController.xib */,
@@ -188,11 +229,13 @@
 				ACDB03081542B03200510C30 /* UserCardCell.xib */,
 				ACEC2100152EDB9100E63B8B /* second.png */,
 				ACEC2102152EDB9100E63B8B /* second@2x.png */,
-				ACEC2104152EDB9100E63B8B /* FirstViewController.xib */,
-				ACEC2107152EDB9100E63B8B /* SecondViewController.xib */,
 				AC1F9525153061B00092F7B0 /* cartaGrande.png */,
 				ACDB03121542B7E000510C30 /* CartaPerDue.h */,
 				ACDB03131542B7E000510C30 /* CartaPerDue.m */,
+				ACE36ACF1546B538003959E7 /* Contatti.h */,
+				ACE36AD01546B539003959E7 /* Contatti.m */,
+				ACE36AD11546B539003959E7 /* Contatti.xib */,
+				ACE36AD21546B539003959E7 /* ContattiCell.xib */,
 				AC455D07152EE2610094B904 /* utilities */,
 				ACEC20EB152EDB9100E63B8B /* Supporting Files */,
 			);
@@ -277,6 +320,16 @@
 				ACDB031B1542D32700510C30 /* checkV@2x.png in Resources */,
 				ACDB031C1542D32700510C30 /* checkX.png in Resources */,
 				ACDB031D1542D32700510C30 /* checkX@2x.png in Resources */,
+				ACE36AC11546ACC3003959E7 /* background.png in Resources */,
+				ACE36ACE1546B14A003959E7 /* grayButton2.png in Resources */,
+				ACE36AD41546B539003959E7 /* Contatti.xib in Resources */,
+				ACE36AD51546B539003959E7 /* ContattiCell.xib in Resources */,
+				ACCDB1291546D5BD00578758 /* pd.png in Resources */,
+				ACCDB12A1546D5BD00578758 /* pd@2x.png in Resources */,
+				ACCDB12C1546D78300578758 /* active@2x.png in Resources */,
+				ACCDB12E1546D7AE00578758 /* active.png in Resources */,
+				ACCDB1311546D9BC00578758 /* push.png in Resources */,
+				ACCDB1321546D9BC00578758 /* push@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +352,7 @@
 				ACDB030E1542B6BF00510C30 /* cardsReceivedModel.xcdatamodeld in Sources */,
 				ACDB03111542B7C000510C30 /* LocalDatabaseAccess.m in Sources */,
 				ACDB03141542B7E000510C30 /* CartaPerDue.m in Sources */,
+				ACE36AD31546B539003959E7 /* Contatti.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
