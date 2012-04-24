@@ -7,15 +7,15 @@
 //
 
 #import "FirstViewController.h"
-
+#import "Contatti.h"
 @implementation FirstViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        //self.title = NSLocalizedString(@"First", @"First");
+        self.tabBarItem.image = [UIImage imageNamed:@"pd.png"];
     }
     return self;
 }
@@ -26,19 +26,35 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+#pragma mark - bottoni view
+
+-(IBAction)showInfo:(id)sender{
+    NSLog(@"show info: %@",self.navigationController);
+    
+    Contatti *info = [[Contatti alloc] initWithNibName:@"Contatti" bundle:nil];
+    [self.navigationController pushViewController:info animated:YES];
+    [info release];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"PerDue";
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+   
+    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    [infoButton addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    // e.g. self.myOutlet = nil;  
 }
 
 - (void)viewWillAppear:(BOOL)animated
