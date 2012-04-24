@@ -44,7 +44,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
+
+    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    UINavigationController *navCtrl1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    [viewController1 release];
+    
+    
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
 //    CardViewController *cardViewController = [[[CardViewController alloc] initWithNibName:@"CardViewController" bundle:nil] autorelease];
     
@@ -54,7 +59,7 @@
     [receivedCardsCtrl release]; 
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, navController, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navCtrl1, viewController2, navController, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
