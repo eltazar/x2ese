@@ -45,14 +45,7 @@
 	// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {	
     [super viewDidLoad];
-	UITextView *infoTextView = [[UITextView alloc] init];
-    infoTextView.frame = CGRectMake(10, 10, 300,130);
-    infoTextView.text = @"I tuoi dati e quelli della tua carta di credito sono archiviati esclusivamente sul tuo smartphone per facilitarti i prossimi acquisti. I dati della carta di credito non vengono conservati sul server. La trasmissione delle informazioni  per ogni signolo acquisto avviene utilizzando le più recenti e sicure tecnologie disponibili per assicurare la massima sicurezza, su una connessione cifrata SSL (Secure Socket Layer), e i dati non vengono conservati sul server." ;
-    infoTextView.editable = NO;
-    infoTextView.font = [UIFont fontWithName:@"Helvetica" size:15];
-    infoTextView.layer.cornerRadius = 6;
-    [self.tableview addSubview:infoTextView];
-    [infoTextView release];
+    self.title = @"Conttati";
 }
 
 
@@ -65,23 +58,28 @@
  */
 
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if(section == 0)
-        return 150;
-    else return 5;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    if(section == 0)
+//        return 150;
+//    else return 5;
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
+}
+
+-(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if(section == 0){
+        return @"Contattaci";
+    }
+    else return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	switch (section) {
         case 0:
-            return 0;
-            break;
-        case 1:
             return 4;
+            break;
         default:
             return 0;
             break;
@@ -142,7 +140,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	}
 	if (indexPath.row == 1){ //mail
 		MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
-		[[controller navigationBar] setTintColor:[UIColor colorWithRed:142/255.0 green:21/255.0 blue:7/255.0 alpha:1.0]];
+		[[controller navigationBar] setBarStyle:UIBarStyleBlack];
 		NSArray *to = [NSArray arrayWithObject:[NSString stringWithFormat:@"redazione@cartaperdue.it"]];
 		[controller setToRecipients:to];
 		controller.mailComposeDelegate = self;
