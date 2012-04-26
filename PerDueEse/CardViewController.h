@@ -11,6 +11,7 @@
 
 @interface CardViewController : UIViewController
 
+@property(nonatomic, retain) IBOutlet UIImageView *stamp;
 @property(nonatomic, retain) IBOutlet UILabel *validateLabel;
 -(void)fillCardInfo:(CartaPerDue*)card;
 @end

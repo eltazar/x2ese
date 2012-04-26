@@ -14,7 +14,7 @@
 @end
 
 @implementation CardViewController
-@synthesize validateLabel;
+@synthesize validateLabel, stamp;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +43,18 @@
     expiration.text = card.expiryString;
     
     validateLabel.text = card.state;
+    
+    if([card.state isEqualToString:@"Valida"]){
+        [self.stamp setImage:[UIImage imageNamed:@"timbroValida.png"]];
+    }
+    else if([card.state isEqualToString:@"Scaduta"]){
+        [self.stamp setImage:[UIImage imageNamed:@"timbroScaduta.png"]];
+
+    }
+    else if([card.state isEqualToString:@"Non esistente"]){
+        [self.stamp setImage:[UIImage imageNamed:@"timbroNotExt.png"]];
+        
+    }
     
 }
 
@@ -114,10 +126,15 @@
     [titolareLabel release];
     [scadenzaLabel release];
     // Do any additional setup after loading the view from its nib.
+    
+    self.stamp = [[UIImageView alloc] initWithFrame:CGRectMake(49, 225, 222, 121)];
+    
+    [self.view addSubview:self.stamp];
 }
 
 - (void)viewDidUnload
 {
+    self.stamp = nil;
     self.validateLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -126,6 +143,7 @@
 
 - (void)dealloc
 {
+    self.stamp = nil;
     self.validateLabel = nil;
     [super dealloc];
 }
