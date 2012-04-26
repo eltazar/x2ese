@@ -73,6 +73,9 @@
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [infoButton addTarget:self action:@selector(showInfo:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:infoButton] autorelease];
+    
+    UIButton *debugBtn = (UIButton*) [self.view viewWithTag:99];
+    [debugBtn setHidden:YES];
 }
 
 - (void)viewDidUnload
