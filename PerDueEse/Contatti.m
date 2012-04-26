@@ -149,7 +149,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 		[controller release];
 	}
 	if  (indexPath.row == 2) { //sito
-		NSURL *url = [NSURL URLWithString:@"http://www.cartaperdue.it"];
+		/*
+        NSURL *url = [NSURL URLWithString:@"http://www.cartaperdue.it"];
 		NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
 		[webView loadRequest:requestObj];		
 			//[self.navigationController pushViewController:sito animated:YES];
@@ -165,11 +166,17 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 		
 		[webView release];
 		webView=nil;
+        */
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.cartaperdue.it"]];
+        
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
 		
 	}
     if(indexPath.row == 3){
         //facebook
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.facebook.com/perdue.roma"]];
+        
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
 	
 }
