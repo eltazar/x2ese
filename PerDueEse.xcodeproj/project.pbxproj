@@ -14,6 +14,11 @@
 		AC456040152EE2BF0094B904 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45603F152EE2BF0094B904 /* Reachability.m */; };
 		AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = AC456042152EE3030094B904 /* DatabaseAccess.m */; };
 		AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456044152EED140094B904 /* SystemConfiguration.framework */; };
+		AC5CBB301549E109009ADFBC /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5CBB2F1549E109009ADFBC /* background2.png */; };
+		AC5CBB321549E19E009ADFBC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5CBB311549E19E009ADFBC /* Default.png */; };
+		AC5CBB341549E1A6009ADFBC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5CBB331549E1A6009ADFBC /* Default@2x.png */; };
+		AC5CBB3A1549E428009ADFBC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5CBB391549E428009ADFBC /* icon.png */; };
+		AC5CBB3D1549E42E009ADFBC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5CBB3C1549E42E009ADFBC /* icon@2x.png */; };
 		AC7DA84415499B7E00936E0E /* timbroScaduta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA84215499B7E00936E0E /* timbroScaduta.png */; };
 		AC7DA84515499B7E00936E0E /* timbroValida.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA84315499B7E00936E0E /* timbroValida.png */; };
 		AC7DA8481549A1CB00936E0E /* timbroNotExt.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA8471549A1CB00936E0E /* timbroNotExt.png */; };
@@ -69,6 +74,11 @@
 		AC456041152EE3030094B904 /* DatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseAccess.h; sourceTree = "<group>"; };
 		AC456042152EE3030094B904 /* DatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseAccess.m; sourceTree = "<group>"; };
 		AC456044152EED140094B904 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC5CBB2F1549E109009ADFBC /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background2.png; path = imgs/background2.png; sourceTree = SOURCE_ROOT; };
+		AC5CBB311549E19E009ADFBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC5CBB331549E1A6009ADFBC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AC5CBB391549E428009ADFBC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AC5CBB3C1549E42E009ADFBC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		AC7DA84215499B7E00936E0E /* timbroScaduta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroScaduta.png; path = imgs/timbroScaduta.png; sourceTree = SOURCE_ROOT; };
 		AC7DA84315499B7E00936E0E /* timbroValida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroValida.png; path = imgs/timbroValida.png; sourceTree = SOURCE_ROOT; };
 		AC7DA8471549A1CB00936E0E /* timbroNotExt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroNotExt.png; path = imgs/timbroNotExt.png; sourceTree = SOURCE_ROOT; };
@@ -110,11 +120,11 @@
 		ACEC20F2152EDB9100E63B8B /* PerDueEse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PerDueEse-Prefix.pch"; sourceTree = "<group>"; };
 		ACEC20F3152EDB9100E63B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACEC20F4152EDB9100E63B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ACEC20F6152EDB9100E63B8B /* HomeController.h */ = {isa = PBXFileReference; path = HomeController.h; sourceTree = "<group>"; };
+		ACEC20F6152EDB9100E63B8B /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		ACEC20F7152EDB9100E63B8B /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		ACEC20F9152EDB9100E63B8B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		ACEC20FB152EDB9100E63B8B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		ACEC20FD152EDB9100E63B8B /* ActivationController.h */ = {isa = PBXFileReference; path = ActivationController.h; sourceTree = "<group>"; };
+		ACEC20FD152EDB9100E63B8B /* ActivationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivationController.h; sourceTree = "<group>"; };
 		ACEC20FE152EDB9100E63B8B /* ActivationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivationController.m; sourceTree = "<group>"; };
 		ACEC2100152EDB9100E63B8B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		ACEC2102152EDB9100E63B8B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
@@ -166,6 +176,7 @@
 		ACDB03151542D31500510C30 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				AC5CBB2F1549E109009ADFBC /* background2.png */,
 				AC7DA8471549A1CB00936E0E /* timbroNotExt.png */,
 				AC7DA84215499B7E00936E0E /* timbroScaduta.png */,
 				AC7DA84315499B7E00936E0E /* timbroValida.png */,
@@ -188,6 +199,10 @@
 		ACEC20D5152EDB9000E63B8B = {
 			isa = PBXGroup;
 			children = (
+				AC5CBB3C1549E42E009ADFBC /* icon@2x.png */,
+				AC5CBB391549E428009ADFBC /* icon.png */,
+				AC5CBB331549E1A6009ADFBC /* Default@2x.png */,
+				AC5CBB311549E19E009ADFBC /* Default.png */,
 				ACEC20EA152EDB9100E63B8B /* PerDueEse */,
 				ACEC20E3152EDB9100E63B8B /* Frameworks */,
 				ACEC20E1152EDB9100E63B8B /* Products */,
@@ -342,6 +357,11 @@
 				AC7DA84415499B7E00936E0E /* timbroScaduta.png in Resources */,
 				AC7DA84515499B7E00936E0E /* timbroValida.png in Resources */,
 				AC7DA8481549A1CB00936E0E /* timbroNotExt.png in Resources */,
+				AC5CBB301549E109009ADFBC /* background2.png in Resources */,
+				AC5CBB321549E19E009ADFBC /* Default.png in Resources */,
+				AC5CBB341549E1A6009ADFBC /* Default@2x.png in Resources */,
+				AC5CBB3A1549E428009ADFBC /* icon.png in Resources */,
+				AC5CBB3D1549E42E009ADFBC /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
