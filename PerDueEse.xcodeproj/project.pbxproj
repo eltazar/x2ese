@@ -14,6 +14,9 @@
 		AC456040152EE2BF0094B904 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45603F152EE2BF0094B904 /* Reachability.m */; };
 		AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = AC456042152EE3030094B904 /* DatabaseAccess.m */; };
 		AC456045152EED140094B904 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456044152EED140094B904 /* SystemConfiguration.framework */; };
+		AC7DA84415499B7E00936E0E /* timbroScaduta.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA84215499B7E00936E0E /* timbroScaduta.png */; };
+		AC7DA84515499B7E00936E0E /* timbroValida.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA84315499B7E00936E0E /* timbroValida.png */; };
+		AC7DA8481549A1CB00936E0E /* timbroNotExt.png in Resources */ = {isa = PBXBuildFile; fileRef = AC7DA8471549A1CB00936E0E /* timbroNotExt.png */; };
 		ACCDB1291546D5BD00578758 /* pd.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB1271546D5BD00578758 /* pd.png */; };
 		ACCDB12A1546D5BD00578758 /* pd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB1281546D5BD00578758 /* pd@2x.png */; };
 		ACCDB12C1546D78300578758 /* active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCDB12B1546D78300578758 /* active@2x.png */; };
@@ -66,6 +69,9 @@
 		AC456041152EE3030094B904 /* DatabaseAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseAccess.h; sourceTree = "<group>"; };
 		AC456042152EE3030094B904 /* DatabaseAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseAccess.m; sourceTree = "<group>"; };
 		AC456044152EED140094B904 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AC7DA84215499B7E00936E0E /* timbroScaduta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroScaduta.png; path = imgs/timbroScaduta.png; sourceTree = SOURCE_ROOT; };
+		AC7DA84315499B7E00936E0E /* timbroValida.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroValida.png; path = imgs/timbroValida.png; sourceTree = SOURCE_ROOT; };
+		AC7DA8471549A1CB00936E0E /* timbroNotExt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timbroNotExt.png; path = imgs/timbroNotExt.png; sourceTree = SOURCE_ROOT; };
 		ACCDB1271546D5BD00578758 /* pd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pd.png; path = imgs/pd.png; sourceTree = SOURCE_ROOT; };
 		ACCDB1281546D5BD00578758 /* pd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pd@2x.png"; path = "imgs/pd@2x.png"; sourceTree = SOURCE_ROOT; };
 		ACCDB12B1546D78300578758 /* active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "active@2x.png"; path = "imgs/active@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -160,6 +166,9 @@
 		ACDB03151542D31500510C30 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				AC7DA8471549A1CB00936E0E /* timbroNotExt.png */,
+				AC7DA84215499B7E00936E0E /* timbroScaduta.png */,
+				AC7DA84315499B7E00936E0E /* timbroValida.png */,
 				ACCDB12F1546D9BC00578758 /* push.png */,
 				ACCDB1301546D9BC00578758 /* push@2x.png */,
 				ACCDB12D1546D7AE00578758 /* active.png */,
@@ -330,6 +339,9 @@
 				ACCDB12E1546D7AE00578758 /* active.png in Resources */,
 				ACCDB1311546D9BC00578758 /* push.png in Resources */,
 				ACCDB1321546D9BC00578758 /* push@2x.png in Resources */,
+				AC7DA84415499B7E00936E0E /* timbroScaduta.png in Resources */,
+				AC7DA84515499B7E00936E0E /* timbroValida.png in Resources */,
+				AC7DA8481549A1CB00936E0E /* timbroNotExt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
