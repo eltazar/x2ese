@@ -11,4 +11,7 @@
 @interface FirstViewController : UIViewController
 
 -(IBAction)showInfo:(id)sender;
+
+//debug
+-(IBAction)showCard:(id)sender;
 @end

@@ -8,6 +8,8 @@
 
 #import "FirstViewController.h"
 #import "Contatti.h"
+#import "CardViewController.h"
+#import "CartaPerDue.h"
 @implementation FirstViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,6 +36,28 @@
     Contatti *info = [[Contatti alloc] initWithNibName:@"Contatti" bundle:nil];
     [self.navigationController pushViewController:info animated:YES];
     [info release];
+}
+
+-(IBAction)showCard:(id)sender{
+ 
+    CardViewController *cardController = [[CardViewController alloc] initWithNibName:@"CardViewController" bundle:nil];
+    
+    CartaPerDue *card = [[CartaPerDue alloc] init];
+    card.name = @"prova";
+    card.surname = @"ciao";
+    card.number = @"123";
+    card.state = @"non esistente";
+    
+    [cardController fillCardInfo:card];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:cardController];
+    
+    [cardController release];
+    navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    navController.navigationBar.barStyle = UIBarStyleBlack;
+    [[self.tabBarController selectedViewController] presentModalViewController:navController animated:YES];
+    
+    [navController release];
 }
 
 #pragma mark - View lifecycle
