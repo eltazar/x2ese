@@ -8,18 +8,18 @@
 
 
 #import <QuartzCore/QuartzCore.h>
-#import "SecondViewController.h"
+#import "ActivationController.h"
 #import "AppDelegate.h"
 #import "Utilita.h"
 
 
-@interface SecondViewController() {
+@interface ActivationController() {
     NSString *_pin;
 }
 @property(nonatomic, retain) NSString *pin;
 @end
 
-@implementation SecondViewController
+@implementation ActivationController
 @synthesize pin = _pin;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
+#import "HomeController.h"
 #import <CoreData/CoreData.h>
-#import "SecondViewController.h"
+#import "ActivationController.h"
 #import "Utilita.h"
 #import "CardViewController.h"
 #import "ReceivedCardsController.h"
@@ -45,12 +45,12 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    UIViewController *viewController1 = [[HomeController alloc] initWithNibName:@"HomeController" bundle:nil];
     UINavigationController *navCtrl1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
     [viewController1 release];
     
     
-    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    UIViewController *viewController2 = [[[ActivationController alloc] initWithNibName:@"ActivationController" bundle:nil] autorelease];
 //    CardViewController *cardViewController = [[[CardViewController alloc] initWithNibName:@"CardViewController" bundle:nil] autorelease];
     
     ReceivedCardsController *receivedCardsCtrl = [[ReceivedCardsController alloc] initWithNibName:@"ReceivedCardsController" bundle:nil];
@@ -157,7 +157,7 @@
     
     if(isPutPin){
         
-        SecondViewController *tab2 = [[self.tabBarController viewControllers] objectAtIndex:1];
+        ActivationController *tab2 = [[self.tabBarController viewControllers] objectAtIndex:1];
 //        tab2.token = newToken;
         [tab2 launchQuery:newToken];
         isPutPin = FALSE;

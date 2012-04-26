@@ -47,14 +47,14 @@
 		ACEC20EF152EDB9100E63B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20ED152EDB9100E63B8B /* InfoPlist.strings */; };
 		ACEC20F1152EDB9100E63B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F0152EDB9100E63B8B /* main.m */; };
 		ACEC20F5152EDB9100E63B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F4152EDB9100E63B8B /* AppDelegate.m */; };
-		ACEC20F8152EDB9100E63B8B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F7152EDB9100E63B8B /* FirstViewController.m */; };
+		ACEC20F8152EDB9100E63B8B /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20F7152EDB9100E63B8B /* HomeController.m */; };
 		ACEC20FA152EDB9100E63B8B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20F9152EDB9100E63B8B /* first.png */; };
 		ACEC20FC152EDB9100E63B8B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC20FB152EDB9100E63B8B /* first@2x.png */; };
-		ACEC20FF152EDB9100E63B8B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20FE152EDB9100E63B8B /* SecondViewController.m */; };
+		ACEC20FF152EDB9100E63B8B /* ActivationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEC20FE152EDB9100E63B8B /* ActivationController.m */; };
 		ACEC2101152EDB9100E63B8B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2100152EDB9100E63B8B /* second.png */; };
 		ACEC2103152EDB9100E63B8B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2102152EDB9100E63B8B /* second@2x.png */; };
-		ACEC2106152EDB9100E63B8B /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2104152EDB9100E63B8B /* FirstViewController.xib */; };
-		ACEC2109152EDB9100E63B8B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2107152EDB9100E63B8B /* SecondViewController.xib */; };
+		ACEC2106152EDB9100E63B8B /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2104152EDB9100E63B8B /* HomeController.xib */; };
+		ACEC2109152EDB9100E63B8B /* ActivationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEC2107152EDB9100E63B8B /* ActivationController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,16 +110,16 @@
 		ACEC20F2152EDB9100E63B8B /* PerDueEse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PerDueEse-Prefix.pch"; sourceTree = "<group>"; };
 		ACEC20F3152EDB9100E63B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACEC20F4152EDB9100E63B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ACEC20F6152EDB9100E63B8B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		ACEC20F7152EDB9100E63B8B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		ACEC20F6152EDB9100E63B8B /* HomeController.h */ = {isa = PBXFileReference; path = HomeController.h; sourceTree = "<group>"; };
+		ACEC20F7152EDB9100E63B8B /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		ACEC20F9152EDB9100E63B8B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		ACEC20FB152EDB9100E63B8B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		ACEC20FD152EDB9100E63B8B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		ACEC20FE152EDB9100E63B8B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ACEC20FD152EDB9100E63B8B /* ActivationController.h */ = {isa = PBXFileReference; path = ActivationController.h; sourceTree = "<group>"; };
+		ACEC20FE152EDB9100E63B8B /* ActivationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivationController.m; sourceTree = "<group>"; };
 		ACEC2100152EDB9100E63B8B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		ACEC2102152EDB9100E63B8B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		ACEC2105152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		ACEC2108152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		ACEC2105152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HomeController.xib; sourceTree = "<group>"; };
+		ACEC2108152EDB9100E63B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ActivationController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,14 +221,14 @@
 			children = (
 				ACEC20F3152EDB9100E63B8B /* AppDelegate.h */,
 				ACEC20F4152EDB9100E63B8B /* AppDelegate.m */,
-				ACEC20F6152EDB9100E63B8B /* FirstViewController.h */,
-				ACEC20F7152EDB9100E63B8B /* FirstViewController.m */,
-				ACEC2104152EDB9100E63B8B /* FirstViewController.xib */,
+				ACEC20F6152EDB9100E63B8B /* HomeController.h */,
+				ACEC20F7152EDB9100E63B8B /* HomeController.m */,
+				ACEC2104152EDB9100E63B8B /* HomeController.xib */,
 				ACEC20F9152EDB9100E63B8B /* first.png */,
 				ACEC20FB152EDB9100E63B8B /* first@2x.png */,
-				ACEC20FD152EDB9100E63B8B /* SecondViewController.h */,
-				ACEC20FE152EDB9100E63B8B /* SecondViewController.m */,
-				ACEC2107152EDB9100E63B8B /* SecondViewController.xib */,
+				ACEC20FD152EDB9100E63B8B /* ActivationController.h */,
+				ACEC20FE152EDB9100E63B8B /* ActivationController.m */,
+				ACEC2107152EDB9100E63B8B /* ActivationController.xib */,
 				AC1F951F153060C30092F7B0 /* CardViewController.h */,
 				AC1F9520153060C30092F7B0 /* CardViewController.m */,
 				AC1F9521153060C30092F7B0 /* CardViewController.xib */,
@@ -319,8 +319,8 @@
 				ACEC20FC152EDB9100E63B8B /* first@2x.png in Resources */,
 				ACEC2101152EDB9100E63B8B /* second.png in Resources */,
 				ACEC2103152EDB9100E63B8B /* second@2x.png in Resources */,
-				ACEC2106152EDB9100E63B8B /* FirstViewController.xib in Resources */,
-				ACEC2109152EDB9100E63B8B /* SecondViewController.xib in Resources */,
+				ACEC2106152EDB9100E63B8B /* HomeController.xib in Resources */,
+				ACEC2109152EDB9100E63B8B /* ActivationController.xib in Resources */,
 				AC1F9523153060C30092F7B0 /* CardViewController.xib in Resources */,
 				AC1F9526153061B00092F7B0 /* cartaGrande.png in Resources */,
 				ACDB03061542AE7C00510C30 /* ReceivedCardsController.xib in Resources */,
@@ -354,8 +354,8 @@
 			files = (
 				ACEC20F1152EDB9100E63B8B /* main.m in Sources */,
 				ACEC20F5152EDB9100E63B8B /* AppDelegate.m in Sources */,
-				ACEC20F8152EDB9100E63B8B /* FirstViewController.m in Sources */,
-				ACEC20FF152EDB9100E63B8B /* SecondViewController.m in Sources */,
+				ACEC20F8152EDB9100E63B8B /* HomeController.m in Sources */,
+				ACEC20FF152EDB9100E63B8B /* ActivationController.m in Sources */,
 				AC45603C152EE2A20094B904 /* Utilita.m in Sources */,
 				AC456040152EE2BF0094B904 /* Reachability.m in Sources */,
 				AC456043152EE3030094B904 /* DatabaseAccess.m in Sources */,
@@ -379,20 +379,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		ACEC2104152EDB9100E63B8B /* FirstViewController.xib */ = {
+		ACEC2104152EDB9100E63B8B /* HomeController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ACEC2105152EDB9100E63B8B /* en */,
 			);
-			name = FirstViewController.xib;
+			name = HomeController.xib;
 			sourceTree = "<group>";
 		};
-		ACEC2107152EDB9100E63B8B /* SecondViewController.xib */ = {
+		ACEC2107152EDB9100E63B8B /* ActivationController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ACEC2108152EDB9100E63B8B /* en */,
 			);
-			name = SecondViewController.xib;
+			name = ActivationController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

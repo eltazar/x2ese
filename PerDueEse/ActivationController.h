@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DatabaseAccess.h"
 
-@interface SecondViewController : UIViewController<DatabaseAccessDelegate>
+@interface ActivationController : UIViewController<DatabaseAccessDelegate>
 {
     DatabaseAccess *dbAccess;
     

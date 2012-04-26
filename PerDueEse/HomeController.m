@@ -6,11 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "HomeController.h"
 #import "Contatti.h"
 #import "CardViewController.h"
 #import "CartaPerDue.h"
-@implementation FirstViewController
+
+@implementation HomeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
